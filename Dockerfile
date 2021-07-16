@@ -1,5 +1,5 @@
 # Build stage
-FROM maven:3.8.1-jdk-11 AS build
+FROM maven:3.8.1-openjdk-16 AS build
 WORKDIR /home/app
 COPY src src
 COPY pom.xml .
