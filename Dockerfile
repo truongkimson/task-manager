@@ -12,4 +12,4 @@ COPY --from=build /home/app/target/task-manager-1.0-SNAPSHOT.jar task-manager.ja
 COPY config.yml .
 COPY scripts .
 EXPOSE 8080
-ENTRYPOINT ["./startup.sh"]
+ENTRYPOINT ["bash", "./startup.sh"]

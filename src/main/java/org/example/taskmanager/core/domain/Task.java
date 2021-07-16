@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import javax.persistence.*;
 import javax.validation.constraints.Future;
+import javax.validation.constraints.FutureOrPresent;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
@@ -23,7 +24,7 @@ public class Task {
     private String description;
 
     @NotNull
-    @Future
+    @FutureOrPresent
     @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate date;
 
