@@ -29,7 +29,7 @@ public class Task {
     private LocalDate date;
 
     @Transient
-    boolean overdue;
+    private boolean overdue;
 
     public Task() {
     }
